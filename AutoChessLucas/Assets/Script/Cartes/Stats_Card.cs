@@ -26,7 +26,7 @@ public class Stats_Card : MonoBehaviour
 
     private void Awake()
     {
-        gameManager = GameManager.Instance;
+        gameManager = FindObjectOfType<GameManager>();
 
         for (int i = 0; i <= gameManager.allCards.Length; i++)
         {
