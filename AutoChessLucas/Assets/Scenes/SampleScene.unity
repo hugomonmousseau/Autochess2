@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mana: 0
+  tourJoueur: 0
 --- !u!1 &30519724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,6 +7552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mana: 0
+  tourJoueur: 0
 --- !u!1 &668911138
 GameObject:
   m_ObjectHideFlags: 0
@@ -12793,6 +12795,7 @@ MonoBehaviour:
   - 1.625
   - 2.75
   character: {fileID: 3762594109887117366, guid: a1db0078887d99b46be08fd171e9d3ea, type: 3}
+  StatsCard: 
 --- !u!61 &872549626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12855,6 +12858,7 @@ MonoBehaviour:
   carte: {fileID: 2047865835}
   unite: {fileID: 1017555146}
   personnage: {fileID: 0}
+  Stats: {fileID: 0}
 --- !u!1 &895117758
 GameObject:
   m_ObjectHideFlags: 0
@@ -19478,6 +19482,7 @@ MonoBehaviour:
   carte: {fileID: 211548990}
   unite: {fileID: 1045052209}
   personnage: {fileID: 475094015}
+  Stats: {fileID: 935375970}
 --- !u!114 &1612376239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19496,6 +19501,7 @@ MonoBehaviour:
   - 1.625
   - 2.75
   character: {fileID: 3762594109887117366, guid: a1db0078887d99b46be08fd171e9d3ea, type: 3}
+  StatsCard: 
 --- !u!4 &1612376240
 Transform:
   m_ObjectHideFlags: 0
@@ -24117,6 +24123,9 @@ MonoBehaviour:
   atk: 1
   hp: 4
   mvt: 14
+  race: 
+  range: 0
+  unite: {fileID: 1045052209}
   GOCost: {fileID: 3921957987523186297}
   GOAtk: {fileID: 559451413}
   GOHp: {fileID: 372273352}
