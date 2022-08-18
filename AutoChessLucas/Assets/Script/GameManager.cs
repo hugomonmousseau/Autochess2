@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public List<string> allCards = new List<string>();
+    public Card[] allCards = new Card[44];
     private void Awake()
     {
         Instance = this;
@@ -14,7 +15,6 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -22,4 +22,5 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    
 }
