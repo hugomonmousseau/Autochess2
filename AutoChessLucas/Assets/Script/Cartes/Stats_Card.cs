@@ -23,7 +23,7 @@ public class Stats_Card : MonoBehaviour
     private GameObject managerCarte;
 
     [SerializeField]
-    private GameManager gameManager;
+    private GameManager gameManager; 
 
     private void Awake()
     {
