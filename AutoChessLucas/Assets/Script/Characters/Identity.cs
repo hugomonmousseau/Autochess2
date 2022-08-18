@@ -14,11 +14,7 @@ public class Identity : MonoBehaviour
     private void Update()
     {
         anim.runtimeAnimatorController = runtimeAnim;
-        if(runtimeAnim != null)
-        {
-
-            Debug.Log(runtimeAnim.name == this.name);
-        }
+        
     }
 
 }
