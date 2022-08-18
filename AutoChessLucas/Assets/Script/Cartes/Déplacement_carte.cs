@@ -13,6 +13,7 @@ public class Déplacement_carte : MonoBehaviour
     public GameObject character;
     private bool IsSpawnable;
     public List<int> StatsCard = new List<int>();
+    private bool die;
 
     void Start()
     {
@@ -59,6 +60,7 @@ public class Déplacement_carte : MonoBehaviour
                 if(manager.GetComponent<CharactersID>().ListRuntimeAnim[i].name == unite.name)
                 {
                     SpawnedCharacter.GetComponent<Identity>().runtimeAnim = manager.GetComponent<CharactersID>().ListRuntimeAnim[i];
+                    die = true;
                 }
             }
 
@@ -73,6 +75,10 @@ public class Déplacement_carte : MonoBehaviour
             unite.transform.position = new Vector3((int)transform.position.x - .5f,(int)transform.position.y - .5f,unite.transform.position.z);
         }
 
+        if (die)
+        {
+            Destroy(gameObject);
+        }
     }
 
 

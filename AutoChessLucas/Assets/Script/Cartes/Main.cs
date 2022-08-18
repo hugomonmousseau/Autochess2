@@ -25,7 +25,16 @@ public class Main : MonoBehaviour
                 Vector2 canvaPosition = new Vector2(0, -5.75f);
                 canvaListe[i].transform.position = canvaPosition;
             }
-            
+            if (boutonListe[i] == null)
+            {
+                boutonListe[i] = boutonListe[i + 1];
+            }
+            if (boutonListe[boutonListe.Count - 1])
+            {
+                boutonListe.Remove(null);
+            }
         }
+        tailleMain = boutonListe.Count;
+        boutonListe.RemoveAll(null);
     }
 }
