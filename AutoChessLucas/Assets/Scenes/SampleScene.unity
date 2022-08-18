@@ -12632,6 +12632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 853333268}
+  - component: {fileID: 853333269}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -12654,6 +12655,341 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853333269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853333267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842b5cb6890c7c04094e54c289ac3fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCards:
+  - name: Chevalier Noir
+    atk: 5
+    hp: 7
+    mvt: 6
+    cost: 6
+    range: 1
+    race: "Cerb\xE8re"
+  - name: Gladiateur
+    atk: 4
+    hp: 8
+    mvt: 5
+    cost: 8
+    range: 1
+    race: "Cerb\xE8re"
+  - name: "D\xE9moniste"
+    atk: 7
+    hp: 3
+    mvt: 4
+    cost: 3
+    range: 1
+    race: "D\xE9mon"
+  - name: Diablotin
+    atk: 4
+    hp: 2
+    mvt: 2
+    cost: 1
+    range: 1
+    race: "D\xE9mon"
+  - name: Le Diable
+    atk: 2
+    hp: 7
+    mvt: 6
+    cost: 5
+    range: 2
+    race: "D\xE9mon"
+  - name: Aventurier
+    atk: 3
+    hp: 2
+    mvt: 4
+    cost: 2
+    range: 1
+    race: Dueliste
+  - name: Mousquetaire
+    atk: 7
+    hp: 6
+    mvt: 5
+    cost: 6
+    range: 1
+    race: Dueliste
+  - name: Cupidon
+    atk: 3
+    hp: 2
+    mvt: 2
+    cost: 4
+    range: 3
+    race: Enchanteur
+  - name: Princesse
+    atk: 1
+    hp: 6
+    mvt: 3
+    cost: 3
+    range: 1
+    race: Enchanteur
+  - name: Pretresse
+    atk: 2
+    hp: 5
+    mvt: 3
+    cost: 4
+    range: 3
+    race: Enchanteur
+  - name: Chaman
+    atk: 4
+    hp: 4
+    mvt: 4
+    cost: 4
+    range: 1
+    race: Etre Magique
+  - name: Mage
+    atk: 5
+    hp: 2
+    mvt: 2
+    cost: 5
+    range: 3
+    race: Etre Magique
+  - name: "Sorci\xE8re Verte"
+    atk: 1
+    hp: 5
+    mvt: 1
+    cost: 4
+    range: 3
+    race: Etre Magique
+  - name: "\xC9p\xE9iste Corrompu"
+    atk: 3
+    hp: 3
+    mvt: 5
+    cost: 5
+    range: 1
+    race: Funeste
+  - name: Squelette Timide
+    atk: 2
+    hp: 1
+    mvt: 3
+    cost: 1
+    range: 1
+    race: Funeste
+  - name: "N\xE9cromancien"
+    atk: 1
+    hp: 7
+    mvt: 2
+    cost: 4
+    range: 4
+    race: Funeste
+  - name: Squelette
+    atk: 1
+    hp: 1
+    mvt: 1
+    cost: 0
+    range: 1
+    race: Funeste
+  - name: Squelette Roux
+    atk: 4
+    hp: 4
+    mvt: 3
+    cost: 2
+    range: 1
+    race: Funeste
+  - name: "Squelette arm\xE9"
+    atk: 1
+    hp: 1
+    mvt: 1
+    cost: 3
+    range: 1
+    race: Funeste
+  - name: Assassin
+    atk: 3
+    hp: 1
+    mvt: 2
+    cost: 3
+    range: 1
+    race: Furtif
+  - name: Ninja
+    atk: 2
+    hp: 3
+    mvt: 4
+    cost: 4
+    range: 1
+    race: Furtif
+  - name: Samourai
+    atk: 3
+    hp: 1
+    mvt: 1
+    cost: 2
+    range: 1
+    race: Furtif
+  - name: Cusinier
+    atk: 1
+    hp: 5
+    mvt: 3
+    cost: 3
+    range: 1
+    race: Humain
+  - name: Dynamitier
+    atk: 2
+    hp: 3
+    mvt: 2
+    cost: 0
+    range: 0
+    race: Humain
+  - name: Humain
+    atk: 2
+    hp: 2
+    mvt: 3
+    cost: 3
+    range: 1
+    race: Humain
+  - name: Individu
+    atk: 1
+    hp: 1
+    mvt: 1
+    cost: 1
+    range: 1
+    race: Humain
+  - name: Villageois
+    atk: 4
+    hp: 3
+    mvt: 2
+    cost: 3
+    range: 1
+    race: Humain
+  - name: Cyclope
+    atk: 2
+    hp: 4
+    mvt: 2
+    cost: 2
+    range: 1
+    race: Monstre
+  - name: Ogre
+    atk: 7
+    hp: 14
+    mvt: 7
+    cost: 7
+    range: 1
+    race: Monstre
+  - name: Orque
+    atk: 7
+    hp: 7
+    mvt: 4
+    cost: 4
+    range: 1
+    race: Monstre
+  - name: Moussaillon
+    atk: 2
+    hp: 1
+    mvt: 2
+    cost: 2
+    range: 1
+    race: Pirate
+  - name: Pirate Pyromane
+    atk: 1
+    hp: 6
+    mvt: 5
+    cost: 4
+    range: 2
+    race: Pirate
+  - name: Barbe Rousse
+    atk: 5
+    hp: 3
+    mvt: 2
+    cost: 4
+    range: 3
+    race: Pirate
+  - name: Archer
+    atk: 1
+    hp: 1
+    mvt: 2
+    cost: 2
+    range: 4
+    race: "R\xF4deur"
+  - name: Kitsune
+    atk: 0
+    hp: 4
+    mvt: 2
+    cost: 3
+    range: 4
+    race: "R\xF4deur"
+  - name: Sniper
+    atk: 7
+    hp: 5
+    mvt: 2
+    cost: 7
+    range: 6
+    race: "R\xF4deur"
+  - name: Robot
+    atk: 4
+    hp: 6
+    mvt: 3
+    cost: 6
+    range: 4
+    race: Technologie
+  - name: Scientifique
+    atk: 2
+    hp: 3
+    mvt: 3
+    cost: 4
+    range: 3
+    race: Technologie
+  - name: "Dro\xEFde de combat"
+    atk: 1
+    hp: 5
+    mvt: 4
+    cost: 5
+    range: 4
+    race: Technologie
+  - name: Bombardier
+    atk: 5
+    hp: 8
+    mvt: 3
+    cost: 7
+    range: 5
+    race: Technologie
+  - name: Chevalier  Hibou
+    atk: 2
+    hp: 2
+    mvt: 3
+    cost: 3
+    range: 1
+    race: "Th\xE9rianthrope"
+  - name: Le Porc
+    atk: 3
+    hp: 6
+    mvt: 3
+    cost: 4
+    range: 1
+    race: "Th\xE9rianthrope"
+  - name: Crocodile
+    atk: 4
+    hp: 4
+    mvt: 3
+    cost: 5
+    range: 1
+    race: "Th\xE9rianthrope"
+  - name: Poulet
+    atk: 7
+    hp: 4
+    mvt: 4
+    cost: 6
+    range: 1
+    race: "Th\xE9rianthrope"
+  - name: Maitre Lapin
+    atk: 2
+    hp: 3
+    mvt: 4
+    cost: 2
+    range: 1
+    race: "Th\xE9rianthrope"
+  - name: Mineur
+    atk: 2
+    hp: 5
+    mvt: 5
+    cost: 5
+    range: 1
+    race: "Cerb\xE8re"
 --- !u!1 &861785920
 GameObject:
   m_ObjectHideFlags: 0
@@ -24117,11 +24453,15 @@ MonoBehaviour:
   atk: 1
   hp: 4
   mvt: 14
+  race: 
+  range: 0
+  unite: {fileID: 1045052209}
   GOCost: {fileID: 3921957987523186297}
   GOAtk: {fileID: 559451413}
   GOHp: {fileID: 372273352}
   GOMvt: {fileID: 57630042}
   ListStats: []
+  gameManager: {fileID: 0}
 --- !u!1 &3921957987523186297
 GameObject:
   m_ObjectHideFlags: 0
