@@ -9,6 +9,7 @@ public class Card_cost : MonoBehaviour
     private SpriteRenderer spriteR;
     void Start()
     {
+        cost = GetComponentInParent<Stats_Card>().cost;
         spriteR = GetComponent<SpriteRenderer>();
         spriteR.sprite = couts[cost];
     }
