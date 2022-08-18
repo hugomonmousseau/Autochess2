@@ -20,11 +20,15 @@ public class Stats_Card : MonoBehaviour
     [SerializeField] List<GameObject> ListStats;
 
     private GameObject managerCarte;
+
+    [SerializeField]
     private GameManager gameManager;
 
     private void Awake()
     {
-        for(int i = 0; i <= gameManager.allCards.Length; i++)
+        gameManager = GameManager.Instance;
+
+        for (int i = 0; i <= gameManager.allCards.Length; i++)
         {
             if(gameManager.allCards[i].name == unite.name)
             {
