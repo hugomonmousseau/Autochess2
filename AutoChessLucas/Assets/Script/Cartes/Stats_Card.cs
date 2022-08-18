@@ -8,6 +8,9 @@ public class Stats_Card : MonoBehaviour
     public int atk;
     public int hp;
     public int mvt;
+    public string race;
+    public int range;
+    public GameObject unite;
 
     //game object
     public GameObject GOCost;
@@ -17,13 +20,28 @@ public class Stats_Card : MonoBehaviour
     [SerializeField] List<GameObject> ListStats;
 
     private GameObject managerCarte;
+    private GameManager gameManager;
 
     private void Awake()
     {
-        GOCost.GetComponent<Card_cost>().cost = cost;
-        GOAtk.GetComponent<Stats>().stat = atk;
-        GOHp.GetComponent<Stats>().stat = hp;
-        GOMvt.GetComponent<Stats>().stat = mvt;
+        for(int i = 0; i <= gameManager.allCards.Length; i++)
+        {
+            if(gameManager.allCards[i].name == unite.name)
+            {
+                GOCost.GetComponent<Card_cost>().cost = gameManager.allCards[i].cost;
+                GOAtk.GetComponent<Stats>().stat = gameManager.allCards[i].atk;
+                GOHp.GetComponent<Stats>().stat = gameManager.allCards[i].mvt;
+                GOMvt.GetComponent<Stats>().stat = gameManager.allCards[i].cost;
+
+                cost = gameManager.allCards[i].cost;
+                hp = gameManager.allCards[i].hp;
+                mvt = gameManager.allCards[i].mvt;
+                atk = gameManager.allCards[i].atk;
+                range = gameManager.allCards[i].range;
+                race = gameManager.allCards[i].race;
+
+            }
+        }
 
     }
     void Start()

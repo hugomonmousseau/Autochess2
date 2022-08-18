@@ -12,6 +12,7 @@ public class Déplacement_carte : MonoBehaviour
     private GameObject personnage;
     public GameObject character;
     private bool IsSpawnable;
+    public List<int> StatsCard = new List<int>();
 
     void Start()
     {
@@ -20,7 +21,11 @@ public class Déplacement_carte : MonoBehaviour
         unite = GetComponent<CarteManager>().unite;
         carte = GetComponent<CarteManager>().carte;
         personnage = GetComponent<CarteManager>().personnage;
-
+        StatsCard.Add(GetComponent<Stats_Card>().cost);
+        StatsCard.Add(GetComponent<Stats_Card>().atk);
+        StatsCard.Add(GetComponent<Stats_Card>().hp);
+        StatsCard.Add(GetComponent<Stats_Card>().mvt);
+        StatsCard.Add(GetComponent<Stats_Card>().range);
         unite.SetActive(false);
 
         //visuels
@@ -43,7 +48,7 @@ public class Déplacement_carte : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && (Souris.x > transform.position.x - (tailleCarte[0]/2) && Souris.x < transform.position.x + (tailleCarte[0]/2) && Souris.y > transform.position.y - (tailleCarte[1]/2) && Souris.y < transform.position.y + (tailleCarte[1]/2))){
             Selectionnee = true;
         }
-        if (Input.GetMouseButtonUp(0) && Selectionnee && IsSpawnable)
+        if (Input.GetMouseButtonUp(0) && Selectionnee && IsSpawnable && GetComponent<Stats_Card>().cost <= GetComponent<PlayerInfo>().mana && GetComponent<PlayerInfo>().tourJoueur)
         {
             GameObject SpawnedCharacter = Instantiate(character,unite.transform.position,Quaternion.identity);
             for (int i = 0; i < manager.GetComponent<CharactersID>().ListRuntimeAnim.Count; i++)

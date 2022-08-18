@@ -7,6 +7,7 @@ public class CarteManager : MonoBehaviour
     public GameObject carte;
     public GameObject unite;
     public GameObject personnage;
+    public GameObject Stats;
     
     private void Start()
     {

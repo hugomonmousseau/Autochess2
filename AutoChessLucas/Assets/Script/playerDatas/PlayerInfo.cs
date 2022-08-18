@@ -5,4 +5,5 @@ using UnityEngine;
 public class PlayerInfo : MonoBehaviour
 {
     public int mana;
+    public bool tourJoueur;
 }
